@@ -86,7 +86,7 @@ export const ProgramMobile = () => {
                 arrows: true,
                 speed: 1500,
               }}
-              className="w-full border p-10 mx-auto custom-splide-arrows"
+              className="w-full mx-auto custom-splide-arrows"
             >
               {Array.from({ length: 5 }).map((_, index) => (
                 <SplideSlide key={index}>
@@ -97,7 +97,7 @@ export const ProgramMobile = () => {
                         alt={item.title}
                         className="w-full rounded-2xl"
                         layout="fill"
-                        objectFit="contain"
+                        objectFit="cover"
                         key={index}
                       />
                     ))}
