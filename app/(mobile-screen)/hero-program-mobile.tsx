@@ -86,7 +86,7 @@ export const ProgramMobile = () => {
                 arrows: true,
                 speed: 1500,
               }}
-              className="w-full max-w-xs mx-auto custom-splide-arrows"
+              className="max-w-xl mx-auto custom-splide-arrows"
             >
               {Array.from({ length: 5 }).map((_, index) => (
                 <SplideSlide key={index}>
@@ -95,7 +95,7 @@ export const ProgramMobile = () => {
                       <Image
                         src={item.image}
                         alt={item.title}
-                        className="w-full h-full object-cover rounded-2xl"
+                        className="w-full rounded-2xl"
                         layout="fill"
                         objectFit="cover"
                         key={index}

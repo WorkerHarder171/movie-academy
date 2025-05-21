@@ -258,7 +258,7 @@ export function GalleryProductMobile() {
                 src={PetualangaImage}
                 alt="Petualangan minilemon"
                 layout="fill"
-                objectFit="fill"
+                objectFit="contain"
                 className="w-full"
               />
             </div>
@@ -311,7 +311,7 @@ export function GalleryProductMobile() {
                 src={SaveTheEarth}
                 alt="Minilemon Save The Earth"
                 layout="fill"
-                objectFit="fill"
+                objectFit="contain"
                 className="w-full"
               />
             </div>
@@ -365,7 +365,7 @@ export function GalleryProductMobile() {
                 className="w-full"
                 src={MinilemonExplore}
                 layout="fill"
-                objectFit="fill"
+                objectFit="contain"
                 alt="Minilemon Explore"
               />
             </div>
@@ -422,7 +422,7 @@ export function GalleryProductMobile() {
                 className="w-full"
                 src={Parenting}
                 layout="fill"
-                objectFit="fill"
+                objectFit="contain"
                 alt="Minilemon Live Parenting"
               />
             </div>
@@ -480,7 +480,7 @@ export function GalleryProductMobile() {
                 className="w-full"
                 src={KabaretShow}
                 layout="fill"
-                objectFit="fill"
+                objectFit="contain"
                 alt="Petualangan minilemon"
               />
             </div>

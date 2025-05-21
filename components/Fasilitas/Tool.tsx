@@ -72,12 +72,12 @@ export const Toolmobile = () => {
             >
               {facilities.map((item, index) => (
                 <SplideSlide key={index}>
-                  <div className="flex flex-col gap-3 p-10">
-                    <div className="rounded-3xl overflow-hidden h-52 border-[10px] border-hijau bg-gray-50">
+                  <div className="flex flex-col gap-1 px-3 py-6">
+                    <div className="rounded-3xl w-full overflow-hidden h-52 border-[10px] border-hijau bg-gray-50">
                       <Image
                         src={item.image}
                         alt={item.title}
-                        className="w-full h-full object-cover "
+                        className="w-full"
                         layout="fill"
                         objectFit="cover"
                       />
