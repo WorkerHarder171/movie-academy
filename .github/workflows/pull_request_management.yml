@@ -1,0 +1,23 @@
+name: Redirect PR to dev branch
+
+on:
+  pull_request:
+    types: [opened, edited, synchronize]
+
+jobs:
+  redirect-to-dev:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check If PR Taerget main
+        id: check_target_branch
+        run: echo "::set-output name=is_main::$(if [[ '${{ github.event.pull_request.base.ref }}' == 'main' ]]; then echo true; else echo false; fi)"
+
+      - name: Redirect to dev branch
+        if: steps.check_target_branch.outputs.is_main == 'true'
+        run: |
+          curl -s -X PATCH \
+            -H "Authorization: Bearer ${{ secrets.TOKEN }}" \
+            -H "Accept: application/vnd.github.v3+json" \
+            https://api.github.com/repos/${{ github.repository }}/pulls/${{ github.event.pull_request.number }} \
+            -d '{"base":"dev"}'
