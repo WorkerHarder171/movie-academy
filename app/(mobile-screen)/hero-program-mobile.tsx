@@ -40,7 +40,7 @@ const facilities = [
 ];
 
 export const ProgramMobile = () => {
-    const [click, setClick] = React.useState(false);
+  const [click, setClick] = React.useState(false);
 
   const handleOnClick = () => {
     setClick(true);
@@ -70,7 +70,7 @@ export const ProgramMobile = () => {
               </ButtonPrimary>
             </Link>
           </div>
-          <div id="facility" className="flex basis-[45%] gap-6 flex-col items-center">
+          <div id="facility" className="flex gap-6 flex-col items-center max-w-3xl">
             <Image className="w-8/12" src={Fasilitas} alt="Fasilitas" />
             <Splide
               options={{
@@ -86,7 +86,7 @@ export const ProgramMobile = () => {
                 arrows: true,
                 speed: 1500,
               }}
-              className="max-w-xl mx-auto custom-splide-arrows"
+              className="w-full border p-10 mx-auto custom-splide-arrows"
             >
               {Array.from({ length: 5 }).map((_, index) => (
                 <SplideSlide key={index}>
@@ -97,7 +97,7 @@ export const ProgramMobile = () => {
                         alt={item.title}
                         className="w-full rounded-2xl"
                         layout="fill"
-                        objectFit="cover"
+                        objectFit="contain"
                         key={index}
                       />
                     ))}
@@ -106,19 +106,22 @@ export const ProgramMobile = () => {
               ))}
             </Splide>
             <div className="mb-10">
-              <ButtonPrimary className="uppercase group" onClick={handleOnClick}>
+              <ButtonPrimary
+                className="uppercase group"
+                onClick={handleOnClick}
+              >
                 See More
               </ButtonPrimary>
             </div>
           </div>
         </div>
         {click ? (
-            <>
-              <ProgramBgMobile />
-              <FasilitasMobile />
-              <Toolmobile />
-            </>
-          ) : null}
+          <>
+            <ProgramBgMobile />
+            <FasilitasMobile />
+            <Toolmobile />
+          </>
+        ) : null}
       </div>
     </section>
   );
