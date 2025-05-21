@@ -250,7 +250,7 @@ export function GalleryProductMobile() {
   return (
     <section>
       {/* Petualangan MiniLemon */}
-      <div className="ww-full bg-[#D5D5D5] py-14" id="product-1">
+      <div className="w-full bg-[#D5D5D5] py-14" id="product-1">
         <div className="mx-auto max-w-screen-640 px-6">
           <div className="container flex flex-col items-center justify-center gap-4">
             <div className="relative h-[396px] w-full sm:h-[492px]">
@@ -264,10 +264,7 @@ export function GalleryProductMobile() {
             </div>
             <div className="flex flex-col gap-y-6 text-start text-sm leading-[1.6rem] tracking-wider text-[#c0cbdf]/90 sm:leading-7">
               <div className="hidden flex-col lg:flex">
-                <Image
-                  src={PetualangTitle}
-                  alt="Petualang minilemon"
-                />
+                <Image src={PetualangTitle} alt="Petualang minilemon" />
               </div>
               <div className="flex flex-col gap-6 text-sm">
                 <p className=" text-bodyTextLight tracking-wider leading-relaxed">
@@ -313,12 +310,14 @@ export function GalleryProductMobile() {
               <Image
                 src={SaveTheEarth}
                 alt="Minilemon Save The Earth"
+                layout="fill"
+                objectFit="fill"
+                className="w-full"
               />
             </div>
             <div className="flex flex-col gap-y-6 text-start text-sm leading-[1.6rem] tracking-wider text-[#c0cbdf]/90 sm:leading-7">
               <div className="hidden flex-col lg:flex">
                 <Image
-                  className="w-8/12"
                   src={MiniLemonTitle}
                   alt="Minilemon Save The Earth Title"
                 />
@@ -372,11 +371,7 @@ export function GalleryProductMobile() {
             </div>
             <div className="flex flex-col gap-y-6 text-start text-sm leading-[1.6rem] tracking-wider text-[#c0cbdf]/90 sm:leading-7">
               <div className="hidden flex-col lg:flex">
-                <Image
-                  className="w-8/12"
-                  src={ExploreTitle}
-                  alt="Minilemon explore Title"
-                />
+                <Image src={ExploreTitle} alt="Minilemon explore Title" />
               </div>
               <div className="flex flex-col gap-6 text-sm">
                 <p className=" text-bodyTextLight tracking-wider leading-relaxed">
@@ -433,11 +428,7 @@ export function GalleryProductMobile() {
             </div>
             <div className="flex flex-col gap-y-6 text-start text-sm leading-[1.6rem] tracking-wider text-[#c0cbdf]/90 sm:leading-7"></div>
             <div className="hidden flex-col lg:flex">
-              <Image
-                className="w-8/12"
-                src={ParentingTitle1}
-                alt="Minilemon Live Parenting1"
-              />
+              <Image src={ParentingTitle1} alt="Minilemon Live Parenting1" />
               <Image
                 className="w-8/12"
                 src={ParentingTitle2}
@@ -481,25 +472,21 @@ export function GalleryProductMobile() {
         </div>
       </div>
       {/* Kabaret Minilemon */}
-              <div className="w-full bg-[#D5D5D5] py-14" id="product-5">
+      <div className="w-full bg-[#D5D5D5] py-14" id="product-5">
         <div className="mx-auto max-w-screen-640 px-6">
           <div className="container flex flex-col items-center justify-center gap-4">
             <div className="relative h-[396px] w-full sm:h-[492px]">
-            <Image
-              className="w-full"
-              src={KabaretShow}
+              <Image
+                className="w-full"
+                src={KabaretShow}
                 layout="fill"
                 objectFit="fill"
-              alt="Petualangan minilemon"
-            />
+                alt="Petualangan minilemon"
+              />
             </div>
             <div className="flex flex-col gap-y-6 text-start text-sm leading-[1.6rem] tracking-wider text-[#c0cbdf]/90 sm:leading-7">
               <div className="hidden flex-col lg:flex">
-              <Image
-                className="w-8/12"
-                src={KabaretTitle}
-                alt="Kabaret Minilemon"
-              />
+                <Image src={KabaretTitle} alt="Kabaret Minilemon" />
               </div>
               <div className="flex flex-col gap-6 text-sm">
                 <p className=" text-bodyTextLight tracking-wider leading-relaxed">
