@@ -31,7 +31,7 @@ export const ToolDesktop = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {facilities.map((item, index) => (
             <div className="flex flex-col gap-2" key={index}>
-              <div className="rounded-3xl overflow-hidden  h-64  border-[6px] border-hijau bg-gray-50 relative">
+              <div className="rounded-3xl overflow-hidden h-64 border-[6px] border-hijau bg-gray-50 relative">
                 <Image
                   src={item.image}
                   alt={item.title}
@@ -73,7 +73,7 @@ export const Toolmobile = () => {
               {facilities.map((item, index) => (
                 <SplideSlide key={index}>
                   <div className="flex flex-col gap-1 px-3 py-6">
-                    <div className="rounded-3xl w-full overflow-hidden h-52 border-[10px] border-hijau bg-gray-50">
+                    <div className="rounded-3xl w-full overflow-hidden h-52 border-[6px] border-hijau bg-gray-50 relative">
                       <Image
                         src={item.image}
                         alt={item.title}

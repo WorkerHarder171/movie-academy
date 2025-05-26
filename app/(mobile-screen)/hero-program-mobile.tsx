@@ -5,7 +5,6 @@ import Image from "next/image";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
 import { ButtonPrimary } from "@/components/ui/button";
-import Link from "next/link";
 
 // image
 import MainRoom from "@/public/facility/main-room.png";
@@ -41,10 +40,16 @@ const facilities = [
 
 export const ProgramMobile = () => {
   const [click, setClick] = React.useState(false);
+  const [clickFasility, setClickFasility] = React.useState(false);
+
 
   const handleOnClick = () => {
     setClick(true);
   };
+
+  const handleOnClickFacility = () => {
+    setClickFasility(true)
+  }
 
   return (
     <section id="program" className="w-full bg-[#F1f1f1]">
@@ -64,13 +69,24 @@ export const ProgramMobile = () => {
             <p className="text-sm text-bodyTextLight tracking-widest leading-relaxed">
               Penyelenggaraan Program dibagi menjadi 3 tahap.
             </p>
-            <Link href="/program">
-              <ButtonPrimary className="uppercase group">
+            <div className="wrapper">
+              <ButtonPrimary
+                className={`uppercase group ${click ? " hidden" : ""}`}
+                onClick={handleOnClick}
+              >
                 See More
               </ButtonPrimary>
-            </Link>
+            </div>
           </div>
-          <div id="facility" className="flex gap-6 flex-col items-center max-w-3xl">
+            {click ? (
+              <div className="duration-300 ease-in-out flex flex-col items-center">
+                <ProgramBgMobile />
+              </div>
+            ) : null}
+          <div
+            id="facility"
+            className={`flex gap-6 flex-col items-center max-w-3xl ${clickFasility ? "hidden" : ""}`}
+          >
             <Image className="w-8/12" src={Fasilitas} alt="Fasilitas" />
             <Splide
               options={{
@@ -107,21 +123,20 @@ export const ProgramMobile = () => {
             </Splide>
             <div className="mb-10">
               <ButtonPrimary
-                className="uppercase group"
-                onClick={handleOnClick}
+                className={`uppercase group`}
+                onClick={handleOnClickFacility}
               >
                 See More
               </ButtonPrimary>
             </div>
           </div>
+            {clickFasility ? (
+              <div className="duration-300 ease-in-out flex flex-col items-center">
+                <FasilitasMobile />
+                <Toolmobile />
+              </div>
+            ) : null}
         </div>
-        {click ? (
-          <>
-            <ProgramBgMobile />
-            <FasilitasMobile />
-            <Toolmobile />
-          </>
-        ) : null}
       </div>
     </section>
   );
