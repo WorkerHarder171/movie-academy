@@ -38,7 +38,7 @@ const ContactMobile = () => {
             {" "}
             <div className="flex basis-1/2 flex-col items-center justify-center gap-4">
               <div className="">
-                <Image className="w-11/12" src={ContactUsTitle} alt="Contact Us" />
+                <Image className="w-7/12 text-center mx-auto" src={ContactUsTitle} alt="Contact Us"/>
               </div>
               <p className="text-xl text-[#d2def4]">How can we help you?</p>
             </div>

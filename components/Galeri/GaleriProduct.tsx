@@ -354,53 +354,54 @@ export function GalleryProductMobile() {
                   Dengan kejadian itu, Anaak-anak Minilemon mulai bersatu dan
                   siap bertualang mencari Ucup dengan bantuan Kak Bibie dan
                   Paman Tigor.{" "}
-                 <Link
-                  className="inline-flex items-center font-bold uppercase text-blue-600 hover:underline"
-                  href="javascript:void(0)"
-                  onClick={() => toggleExpand(1)}
-                >
-                  <span className={isExpanded[1] == true ? "hidden" : "flex"}>
-                    Read More{" "}
-                    <span className="ml-1 flex items-center text-xs">❯</span>
-                  </span>
-                </Link>
-                </p>
-                 <AnimatePresence>
-                {isExpanded[1] && (
-                  <motion.div
-                    variants={containerVariants}
-                    initial="hidden"
-                    animate="visible"
-                    exit="exit"
-                    transition={{ duration: 0.5 }}
-                    className="flex flex-col gap-y-6 text-bodyTextLight tracking-wider leading-relaxed text-sm"
+                  <Link
+                    className="inline-flex items-center font-bold uppercase text-blue-600 hover:underline"
+                    href="javascript:void(0)"
+                    onClick={() => toggleExpand(1)}
                   >
-                    <motion.p variants={paragraphVariants}>
-                      Petualangan seru dengan rocket canggih dan mesin portal
-                      Kak Biebie, membawa mereka ke berbagai tempat, mulai dari
-                      Candi Borobudur, Jogjakarta hingga Pelabuhan Surabaya. Di
-                      tengah pencarian, mereka menemukan bahwa Ucup ternyata
-                      diculik oleh kelompok penjahat yang terlibat dalam
-                      perburuan hewan langka secara ilegal. Akankah mereka
-                      berhasil menyelamatkan Ucup dan menggagalkan rencana jahat
-                      para pemburu? Saksikan keseruan dan ketegangan film
-                      &quot;Petualangan si Minilemon&quot;!{" "}
-                      <span
-                        onClick={() => {
-                          toggleExpand(1);
-                          scrollToTopProduct(1);
-                        }}
-                        className="inline-flex cursor-pointer items-center font-bold uppercase text-blue-600 hover:underline"
-                      >
-                        Read Less
-                      </span>
-                    </motion.p>
-                  </motion.div>
-                )}
-              </AnimatePresence>
+                    <span className={isExpanded[1] == true ? "hidden" : "flex"}>
+                      Read More{" "}
+                      <span className="ml-1 flex items-center text-xs">❯</span>
+                    </span>
+                  </Link>
+                </p>
+                <AnimatePresence>
+                  {isExpanded[1] && (
+                    <motion.div
+                      variants={containerVariants}
+                      initial="hidden"
+                      animate="visible"
+                      exit="exit"
+                      transition={{ duration: 0.5 }}
+                      className="flex flex-col gap-y-6 text-bodyTextLight tracking-wider leading-relaxed text-sm"
+                    >
+                      <motion.p variants={paragraphVariants}>
+                        Petualangan seru dengan rocket canggih dan mesin portal
+                        Kak Biebie, membawa mereka ke berbagai tempat, mulai
+                        dari Candi Borobudur, Jogjakarta hingga Pelabuhan
+                        Surabaya. Di tengah pencarian, mereka menemukan bahwa
+                        Ucup ternyata diculik oleh kelompok penjahat yang
+                        terlibat dalam perburuan hewan langka secara ilegal.
+                        Akankah mereka berhasil menyelamatkan Ucup dan
+                        menggagalkan rencana jahat para pemburu? Saksikan
+                        keseruan dan ketegangan film &quot;Petualangan si
+                        Minilemon&quot;!{" "}
+                        <span
+                          onClick={() => {
+                            toggleExpand(1);
+                            scrollToTopProduct(1);
+                          }}
+                          className="inline-flex cursor-pointer items-center font-bold uppercase text-blue-600 hover:underline"
+                        >
+                          Read Less
+                        </span>
+                      </motion.p>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
               </div>
               <Link
-               href="javascript:void(0)"
+                href="javascript:void(0)"
                 className="flex flex-row items-center gap-x-2 text-bodyTextLight"
               >
                 <span className="rounded-full bg-[#333] p-[.4rem] shadow-xl">
@@ -443,15 +444,17 @@ export function GalleryProductMobile() {
                   belajar menanamkan nilai-nilai positif dan tanggung jawab
                   terhadap alam dari setiap langkah mereka.{" "}
                   <Link
-                  className="inline-flex items-center font-bold uppercase text-blue-600 hover:underline"
-                  href="javascript:void(0)"
-                  onClick={() => toggleExpand(2)}
-                >
-                  <span className={isExpanded[2] === true ? "hidden" : "flex"}>
-                    Read More{" "}
-                    <span className="ml-1 flex items-center text-xs">❯</span>
-                  </span>
-                </Link>
+                    className="inline-flex items-center font-bold uppercase text-blue-600 hover:underline"
+                    href="javascript:void(0)"
+                    onClick={() => toggleExpand(2)}
+                  >
+                    <span
+                      className={isExpanded[2] === true ? "hidden" : "flex"}
+                    >
+                      Read More{" "}
+                      <span className="ml-1 flex items-center text-xs">❯</span>
+                    </span>
+                  </Link>
                 </p>
                 <AnimatePresence>
                   {isExpanded[2] && (
@@ -521,92 +524,92 @@ export function GalleryProductMobile() {
       >
         <motion.div className="mx-auto max-w-screen-640 px-6">
           <motion.div className="container flex flex-col items-center justify-center gap-4">
-        <div className="relative h-[396px] w-full sm:h-[492px]">
-          <Image
-            className="w-full"
-            src={MinilemonExplore}
-            layout="fill"
-            objectFit="contain"
-            alt="Minilemon Explore"
-          />
-        </div>
-        <motion.div className="flex flex-col gap-y-6 text-start text-sm leading-[1.6rem] tracking-wider text-[#c0cbdf]/90 sm:leading-7">
-          <div className="hidden flex-col lg:flex">
-            <Image src={ExploreTitle} alt="Minilemon explore Title" />
-          </div>
-          <div className="flex flex-col gap-6 text-sm">
-            <p className=" text-bodyTextLight tracking-wider leading-relaxed">
-          Minilemon Explorer adalah game interaktif yang memadukan
-          storytelling dan edukasi, menghadirkan pengalaman belajar
-          sekaligus bermain yang seru dalam balutan tema petualangan.
-          Dalam game ini, kamu akan diajak menjelajahi berbagai tempat
-          menarik di Nusantara, salah satunya adalah kota budaya yang
-          memesona, Yogyakarta!
-            </p>
-            <p className=" text-bodyTextLight tracking-wider leading-relaxed">
-          Tak hanya sampai di situ, Minilemon Explorer terus berkembang
-          dengan memperluas peta permainan ke berbagai lokasi ikonik di
-          seluruh Indonesia. Dari megahnya hutan Kalimantan, indahnya
-          pantai di Bali, hingga eksotisme alam Papua, setiap wilayah
-          menyuguhkan tema yang unik dan mekanisme permainan yang selalu
-          baru.{" "}
-          <Link
-            className="inline-flex items-center font-bold uppercase text-blue-600 hover:underline"
-            href="javascript:void(0)"
-            onClick={() => toggleExpand(3)}
-          >
-            <span
-              className={isExpanded[3] === true ? "hidden" : "flex"}
-            >
-              Read More{" "}
-              <span className="ml-1 flex items-center text-xs">❯</span>
-            </span>
-          </Link>
-            </p>
-            <AnimatePresence>
-          {isExpanded[3] && (
-            <motion.div
-              variants={containerVariants}
-              initial="hidden"
-              animate="visible"
-              exit="exit"
-              transition={{ duration: 0.5 }}
-              className="flex flex-col gap-y-6 text-bodyTextLight tracking-wider leading-relaxed text-sm"
-            >
-              <motion.p variants={paragraphVariants}>
-            Ke depannya, kami akan menghadirkan gameplay bertema
-            Pramuka di Jogja, di mana kamu bisa merasakan asyiknya
-            memancing, berburu, hingga membangun tenda di alam
-            terbuka.
-              </motion.p>
-              <motion.p variants={paragraphVariants}>
-            Yuk, gabung dalam petualangan seru di Minilemon
-            Explorer! Bersama, kita jelajahi kekayaan budaya dan
-            keindahan alam Nusantara yang luar biasa.{" "}
-            <span
-              onClick={() => {
-                toggleExpand(3);
-                scrollToTopProduct(3);
-              }}
-              className="inline-flex cursor-pointer items-center font-bold uppercase text-blue-600 hover:underline"
-            >
-              Read Less
-            </span>
-              </motion.p>
+            <div className="relative h-[396px] w-full sm:h-[492px]">
+              <Image
+                className="w-full"
+                src={MinilemonExplore}
+                layout="fill"
+                objectFit="contain"
+                alt="Minilemon Explore"
+              />
+            </div>
+            <motion.div className="flex flex-col gap-y-6 text-start text-sm leading-[1.6rem] tracking-wider text-[#c0cbdf]/90 sm:leading-7">
+              <div className="hidden flex-col lg:flex">
+                <Image src={ExploreTitle} alt="Minilemon explore Title" />
+              </div>
+              <div className="flex flex-col gap-6 text-sm">
+                <p className=" text-bodyTextLight tracking-wider leading-relaxed">
+                  Minilemon Explorer adalah game interaktif yang memadukan
+                  storytelling dan edukasi, menghadirkan pengalaman belajar
+                  sekaligus bermain yang seru dalam balutan tema petualangan.
+                  Dalam game ini, kamu akan diajak menjelajahi berbagai tempat
+                  menarik di Nusantara, salah satunya adalah kota budaya yang
+                  memesona, Yogyakarta!
+                </p>
+                <p className=" text-bodyTextLight tracking-wider leading-relaxed">
+                  Tak hanya sampai di situ, Minilemon Explorer terus berkembang
+                  dengan memperluas peta permainan ke berbagai lokasi ikonik di
+                  seluruh Indonesia. Dari megahnya hutan Kalimantan, indahnya
+                  pantai di Bali, hingga eksotisme alam Papua, setiap wilayah
+                  menyuguhkan tema yang unik dan mekanisme permainan yang selalu
+                  baru.{" "}
+                  <Link
+                    className="inline-flex items-center font-bold uppercase text-blue-600 hover:underline"
+                    href="javascript:void(0)"
+                    onClick={() => toggleExpand(3)}
+                  >
+                    <span
+                      className={isExpanded[3] === true ? "hidden" : "flex"}
+                    >
+                      Read More{" "}
+                      <span className="ml-1 flex items-center text-xs">❯</span>
+                    </span>
+                  </Link>
+                </p>
+                <AnimatePresence>
+                  {isExpanded[3] && (
+                    <motion.div
+                      variants={containerVariants}
+                      initial="hidden"
+                      animate="visible"
+                      exit="exit"
+                      transition={{ duration: 0.5 }}
+                      className="flex flex-col gap-y-6 text-bodyTextLight tracking-wider leading-relaxed text-sm"
+                    >
+                      <motion.p variants={paragraphVariants}>
+                        Ke depannya, kami akan menghadirkan gameplay bertema
+                        Pramuka di Jogja, di mana kamu bisa merasakan asyiknya
+                        memancing, berburu, hingga membangun tenda di alam
+                        terbuka.
+                      </motion.p>
+                      <motion.p variants={paragraphVariants}>
+                        Yuk, gabung dalam petualangan seru di Minilemon
+                        Explorer! Bersama, kita jelajahi kekayaan budaya dan
+                        keindahan alam Nusantara yang luar biasa.{" "}
+                        <span
+                          onClick={() => {
+                            toggleExpand(3);
+                            scrollToTopProduct(3);
+                          }}
+                          className="inline-flex cursor-pointer items-center font-bold uppercase text-blue-600 hover:underline"
+                        >
+                          Read Less
+                        </span>
+                      </motion.p>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </div>
+              <Link
+                href={"#"}
+                className="flex flex-row items-center gap-x-2 text-bodyTextLight"
+              >
+                <span className="rounded-full bg-[#333] p-[.4rem] shadow-xl">
+                  <FaYoutube className="text-white" />
+                </span>
+                Trailer
+              </Link>
             </motion.div>
-          )}
-            </AnimatePresence>
-          </div>
-          <Link
-            href={"#"}
-            className="flex flex-row items-center gap-x-2 text-bodyTextLight"
-          >
-            <span className="rounded-full bg-[#333] p-[.4rem] shadow-xl">
-          <FaYoutube className="text-white" />
-            </span>
-            Trailer
-          </Link>
-        </motion.div>
           </motion.div>
         </motion.div>
       </motion.div>

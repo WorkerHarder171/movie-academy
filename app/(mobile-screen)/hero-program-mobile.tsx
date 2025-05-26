@@ -105,57 +105,6 @@ export const ProgramMobile = () => {
             <FasilitasMobile />
             <Toolmobile />
           </div>
-
-          {/* <div
-            id="facility"
-            className={`flex gap-6 flex-col items-center max-w-3xl ${clickFasility ? "hidden" : ""}`}
-          >
-            <Image className="w-8/12" src={Fasilitas} alt="Fasilitas" />
-            <Splide
-              options={{
-                type: "loop",
-                interval: 4000,
-                perPage: 1,
-                perMove: 1,
-                gap: "0.5rem",
-                drag: "free",
-                focus: "center",
-                pagination: false,
-                autoplay: true,
-                arrows: true,
-                speed: 1500,
-              }}
-              className="w-full mx-auto custom-splide-arrows"
-            >
-              {Array.from({ length: 5 }).map((_, index) => (
-                <SplideSlide key={index}>
-                  <div className="h-[250px] w-full bg-gray-50 border-[6px] border-hijau rounded-3xl relative">
-                    {facilities.map((item, index) => (
-                      <Image
-                        src={item.image}
-                        alt={item.title}
-                        className="w-full rounded-2xl"
-                        layout="fill"
-                        objectFit="cover"
-                        key={index}
-                      />
-                    ))}
-                  </div>
-                </SplideSlide>
-              ))}
-            </Splide>
-            <div className="mb-10">
-              <ButtonPrimary
-                className={`uppercase group`}
-                onClick={handleOnClickFacility}
-              >
-                See More
-              </ButtonPrimary>
-            </div>
-          </div> */}
-          {/* {clickFasility ? (
-            <div className="duration-300 ease-in-out flex flex-col items-center"></div>
-          ) : null} */}
         </div>
       </div>
     </section>

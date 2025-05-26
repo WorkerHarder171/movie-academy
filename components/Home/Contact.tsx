@@ -38,7 +38,7 @@ const Contact = () => {
             {" "}
             <div className="flex basis-1/2 flex-col items-center justify-center gap-6">
               <div className="">
-                <Image src={ContactUsTitle} alt="Contact Us" />
+                <Image src={ContactUsTitle} alt="Contact Us" className="sm:w-8/12" />
               </div>
               <p className="text-3xl text-[#d2def4]">How can we help you?</p>
             </div>
