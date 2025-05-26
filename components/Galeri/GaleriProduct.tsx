@@ -510,7 +510,7 @@ export function GalleryProductMobile() {
         </div>
       </div>
       {/* Minilemon Explore */}
-      <div
+      <motion.div
         variants={thirdDivVariants}
         initial="hidden"
         animate="visible"
@@ -521,95 +521,95 @@ export function GalleryProductMobile() {
       >
         <motion.div className="mx-auto max-w-screen-640 px-6">
           <motion.div className="container flex flex-col items-center justify-center gap-4">
-            <div className="relative h-[396px] w-full sm:h-[492px]">
-              <Image
-                className="w-full"
-                src={MinilemonExplore}
-                layout="fill"
-                objectFit="contain"
-                alt="Minilemon Explore"
-              />
-            </div>
-            <motion.div className="flex flex-col gap-y-6 text-start text-sm leading-[1.6rem] tracking-wider text-[#c0cbdf]/90 sm:leading-7">
-              <div className="hidden flex-col lg:flex">
-                <Image src={ExploreTitle} alt="Minilemon explore Title" />
-              </div>
-              <div className="flex flex-col gap-6 text-sm">
-                <p className=" text-bodyTextLight tracking-wider leading-relaxed">
-                  Minilemon Explorer adalah game interaktif yang memadukan
-                  storytelling dan edukasi, menghadirkan pengalaman belajar
-                  sekaligus bermain yang seru dalam balutan tema petualangan.
-                  Dalam game ini, kamu akan diajak menjelajahi berbagai tempat
-                  menarik di Nusantara, salah satunya adalah kota budaya yang
-                  memesona, Yogyakarta!
-                </p>
-                <p className=" text-bodyTextLight tracking-wider leading-relaxed">
-                  Tak hanya sampai di situ, Minilemon Explorer terus berkembang
-                  dengan memperluas peta permainan ke berbagai lokasi ikonik di
-                  seluruh Indonesia. Dari megahnya hutan Kalimantan, indahnya
-                  pantai di Bali, hingga eksotisme alam Papua, setiap wilayah
-                  menyuguhkan tema yang unik dan mekanisme permainan yang selalu
-                  baru.{" "}
-                  <Link
-                    className="inline-flex items-center font-bold uppercase text-blue-600 hover:underline"
-                    href="javascript:void(0)"
-                    onClick={() => toggleExpand(3)}
-                  >
-                    <span
-                      className={isExpanded[3] === true ? "hidden" : "flex"}
-                    >
-                      Read More{" "}
-                      <span className="ml-1 flex items-center text-xs">❯</span>
-                    </span>
-                  </Link>
-                </p>
-                <AnimatePresence>
-                  {isExpanded[3] && (
-                    <motion.div
-                      variants={containerVariants}
-                      initial="hidden"
-                      animate="visible"
-                      exit="exit"
-                      transition={{ duration: 0.5 }}
-                      className="flex flex-col gap-y-6 text-bodyTextLight tracking-wider leading-relaxed text-sm"
-                    >
-                      <motion.p variants={paragraphVariants}>
-                        Ke depannya, kami akan menghadirkan gameplay bertema
-                        Pramuka di Jogja, di mana kamu bisa merasakan asyiknya
-                        memancing, berburu, hingga membangun tenda di alam
-                        terbuka.
-                      </motion.p>
-                      <motion.p variants={paragraphVariants}>
-                        Yuk, gabung dalam petualangan seru di Minilemon
-                        Explorer! Bersama, kita jelajahi kekayaan budaya dan
-                        keindahan alam Nusantara yang luar biasa.{" "}
-                        <span
-                          onClick={() => {
-                            toggleExpand(3);
-                            scrollToTopProduct(3);
-                          }}
-                          className="inline-flex cursor-pointer items-center font-bold uppercase text-blue-600 hover:underline"
-                        >
-                          Read Less
-                        </span>
-                      </motion.p>
-                    </motion.div>
-                  )}
-                </AnimatePresence>
-              </div>
-              <Link
-                href={"#"}
-                className="flex flex-row items-center gap-x-2 text-bodyTextLight"
-              >
-                <span className="rounded-full bg-[#333] p-[.4rem] shadow-xl">
-                  <FaYoutube className="text-white" />
-                </span>
-                Trailer
-              </Link>
+        <div className="relative h-[396px] w-full sm:h-[492px]">
+          <Image
+            className="w-full"
+            src={MinilemonExplore}
+            layout="fill"
+            objectFit="contain"
+            alt="Minilemon Explore"
+          />
+        </div>
+        <motion.div className="flex flex-col gap-y-6 text-start text-sm leading-[1.6rem] tracking-wider text-[#c0cbdf]/90 sm:leading-7">
+          <div className="hidden flex-col lg:flex">
+            <Image src={ExploreTitle} alt="Minilemon explore Title" />
+          </div>
+          <div className="flex flex-col gap-6 text-sm">
+            <p className=" text-bodyTextLight tracking-wider leading-relaxed">
+          Minilemon Explorer adalah game interaktif yang memadukan
+          storytelling dan edukasi, menghadirkan pengalaman belajar
+          sekaligus bermain yang seru dalam balutan tema petualangan.
+          Dalam game ini, kamu akan diajak menjelajahi berbagai tempat
+          menarik di Nusantara, salah satunya adalah kota budaya yang
+          memesona, Yogyakarta!
+            </p>
+            <p className=" text-bodyTextLight tracking-wider leading-relaxed">
+          Tak hanya sampai di situ, Minilemon Explorer terus berkembang
+          dengan memperluas peta permainan ke berbagai lokasi ikonik di
+          seluruh Indonesia. Dari megahnya hutan Kalimantan, indahnya
+          pantai di Bali, hingga eksotisme alam Papua, setiap wilayah
+          menyuguhkan tema yang unik dan mekanisme permainan yang selalu
+          baru.{" "}
+          <Link
+            className="inline-flex items-center font-bold uppercase text-blue-600 hover:underline"
+            href="javascript:void(0)"
+            onClick={() => toggleExpand(3)}
+          >
+            <span
+              className={isExpanded[3] === true ? "hidden" : "flex"}
+            >
+              Read More{" "}
+              <span className="ml-1 flex items-center text-xs">❯</span>
+            </span>
+          </Link>
+            </p>
+            <AnimatePresence>
+          {isExpanded[3] && (
+            <motion.div
+              variants={containerVariants}
+              initial="hidden"
+              animate="visible"
+              exit="exit"
+              transition={{ duration: 0.5 }}
+              className="flex flex-col gap-y-6 text-bodyTextLight tracking-wider leading-relaxed text-sm"
+            >
+              <motion.p variants={paragraphVariants}>
+            Ke depannya, kami akan menghadirkan gameplay bertema
+            Pramuka di Jogja, di mana kamu bisa merasakan asyiknya
+            memancing, berburu, hingga membangun tenda di alam
+            terbuka.
+              </motion.p>
+              <motion.p variants={paragraphVariants}>
+            Yuk, gabung dalam petualangan seru di Minilemon
+            Explorer! Bersama, kita jelajahi kekayaan budaya dan
+            keindahan alam Nusantara yang luar biasa.{" "}
+            <span
+              onClick={() => {
+                toggleExpand(3);
+                scrollToTopProduct(3);
+              }}
+              className="inline-flex cursor-pointer items-center font-bold uppercase text-blue-600 hover:underline"
+            >
+              Read Less
+            </span>
+              </motion.p>
             </motion.div>
+          )}
+            </AnimatePresence>
+          </div>
+          <Link
+            href={"#"}
+            className="flex flex-row items-center gap-x-2 text-bodyTextLight"
+          >
+            <span className="rounded-full bg-[#333] p-[.4rem] shadow-xl">
+          <FaYoutube className="text-white" />
+            </span>
+            Trailer
+          </Link>
+        </motion.div>
           </motion.div>
         </motion.div>
-      </div>
+      </motion.div>
 
       {/* Parenting */}
       <motion.div
