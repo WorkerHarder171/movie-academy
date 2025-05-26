@@ -244,17 +244,17 @@ export const ProgramBgMobile = () => {
             </div>
           </div>
         </div>
-        <div className="wrapper py-20 bg-[#292929]">
+        <div className="wrapper py-10 px-4 bg-[#292929]">
           <div className="container mx-auto">
             <Image
               src={PendidikanTitle}
               alt="Program Penddidikan"
               className="w-10/12 mx-auto"
             />
-            <div className="wrapper-card grid md:grid-cols-3 sm:grid-cols-1 gap-6 mt-10 px-4">
+            <div className="wrapper-card grid md:grid-cols-3 sm:grid-cols-1 gap-6 mt-5 px-4">
               {program.map((item, index) => (
-                <div className="flex flex-col gap-5 items-center" key={index}>
-                  <p className="text-white font-semibold text-lg capitalize text-center">
+                <div className="flex flex-col-reverse gap-3 items-center" key={index}>
+                  <p className="text-white font-semibold text-md capitalize text-center">
                     {item.title}
                   </p>
                   <div className="w-full rounded-3xl overflow-hidden h-64 border-[6px] border-hijau bg-gray-50 relative">

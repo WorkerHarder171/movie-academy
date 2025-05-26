@@ -1,10 +1,21 @@
+"use client";
 import Image from "next/image";
 import bgHero from "@/public/background/Home.png";
 import TitleHero from "@/public/title/Minilemon-Movie-Academy.png";
+
+import { useState } from "react";
 import { ButtonPrimary } from "@/components/ui/button";
-import Link from "next/link";
+import { AnimatePresence, motion } from "framer-motion";
+
+import { FounderMobile } from "@/components/About/Founder";
+import { VisiMobile } from "@/components/About/Visi";
 
 export const HeroMobile = () => {
+  const [click, setClick] = useState(false);
+
+  const handleOnClick = () => {
+    setClick(true);
+  };
   return (
     <section>
       <div className="relative flex py-4 items-center justify-center bg-[#d6ddf4] bg-cover bg-center">
@@ -37,11 +48,37 @@ export const HeroMobile = () => {
             kreatif dan intellectual property (MINILEMON) yang berorientasi pada
             Pendidikan, kebudayaan, Sosial, ilmu pengetahuan dan teknologi.
           </p>
-          <Link href="/about">
+          <button
+            className={`${click ? "hidden" : null}`}
+            onClick={handleOnClick}
+          >
             <ButtonPrimary className="uppercase group">See More</ButtonPrimary>
-          </Link>
+          </button>
         </div>
       </div>
+      {click ? (
+        <AnimatePresence>
+          <motion.div
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: "auto", opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            transition={{ duration: 0.5, ease: "easeInOut" }}
+          >
+            <div className="wrapper flex flex-col">
+              <VisiMobile />
+              <FounderMobile />
+              <div className="bg-[#1b1b1b] w-full text-center pb-5">
+                <ButtonPrimary
+                  className={`uppercase group`}
+                  onClick={() => setClick(false)}
+                >
+                  Read Less
+                </ButtonPrimary>
+              </div>
+            </div>
+          </motion.div>
+        </AnimatePresence>
+      ) : null}
     </section>
   );
 };

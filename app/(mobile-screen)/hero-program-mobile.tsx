@@ -2,54 +2,54 @@
 
 import React from "react";
 import Image from "next/image";
-import { Splide, SplideSlide } from "@splidejs/react-splide";
+// import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
 import { ButtonPrimary } from "@/components/ui/button";
+import { AnimatePresence, motion } from "framer-motion";
 
 // image
-import MainRoom from "@/public/facility/main-room.png";
-import DesignRoom from "@/public/facility/design-room.png";
-import MeetingRoom from "@/public/facility/meeting-room.png";
-import ProgrammerRoom from "@/public/facility/programmer-room.png";
+// import MainRoom from "@/public/facility/main-room.png";
+// import DesignRoom from "@/public/facility/design-room.png";
+// import MeetingRoom from "@/public/facility/meeting-room.png";
+// import ProgrammerRoom from "@/public/facility/programmer-room.png";
 
 import ProgramText from "@/public/title/Program.png";
-import Fasilitas from "@/public/title/Fasilitas.png";
+// import Fasilitas from "@/public/title/Fasilitas.png";
 
 import { ProgramBgMobile } from "@/components/Program/Program";
 import { FasilitasMobile } from "@/components/Fasilitas/Fasilitas";
 import { Toolmobile } from "@/components/Fasilitas/Tool";
 
-const facilities = [
-  {
-    image: MainRoom,
-    title: "Main Room",
-  },
-  {
-    image: DesignRoom,
-    title: "Design Room",
-  },
-  {
-    image: MeetingRoom,
-    title: "Meeting Room",
-  },
-  {
-    image: ProgrammerRoom,
-    title: "Programmer Room",
-  },
-];
+// const facilities = [
+//   {
+//     image: MainRoom,
+//     title: "Main Room",
+//   },
+//   {
+//     image: DesignRoom,
+//     title: "Design Room",
+//   },
+//   {
+//     image: MeetingRoom,
+//     title: "Meeting Room",
+//   },
+//   {
+//     image: ProgrammerRoom,
+//     title: "Programmer Room",
+//   },
+// ];
 
 export const ProgramMobile = () => {
   const [click, setClick] = React.useState(false);
-  const [clickFasility, setClickFasility] = React.useState(false);
-
+  // const [clickFasility, setClickFasility] = React.useState(false);
 
   const handleOnClick = () => {
     setClick(true);
   };
 
-  const handleOnClickFacility = () => {
-    setClickFasility(true)
-  }
+  // const handleOnClickFacility = () => {
+  //   setClickFasility(true)
+  // }
 
   return (
     <section id="program" className="w-full bg-[#F1f1f1]">
@@ -78,12 +78,35 @@ export const ProgramMobile = () => {
               </ButtonPrimary>
             </div>
           </div>
-            {click ? (
-              <div className="duration-300 ease-in-out flex flex-col items-center">
-                <ProgramBgMobile />
-              </div>
-            ) : null}
-          <div
+          {click ? (
+            <AnimatePresence>
+              <motion.div
+                initial={{ height: 0, opacity: 0 }}
+                animate={{ height: "auto", opacity: 1 }}
+                exit={{ height: 0, opacity: 0 }}
+                transition={{ duration: 0.5, ease: "easeInOut" }}
+              >
+                <div className="flex flex-col items-center">
+                  <ProgramBgMobile />
+                  <div className="bg-[#292929] w-full text-center pb-5">
+                    <ButtonPrimary
+                      className={`uppercase group`}
+                      onClick={() => setClick(false)}
+                    >
+                      Read Less
+                    </ButtonPrimary>
+                  </div>
+                </div>
+              </motion.div>
+            </AnimatePresence>
+          ) : null}
+
+          <div className="wrapper">
+            <FasilitasMobile />
+            <Toolmobile />
+          </div>
+
+          {/* <div
             id="facility"
             className={`flex gap-6 flex-col items-center max-w-3xl ${clickFasility ? "hidden" : ""}`}
           >
@@ -129,13 +152,10 @@ export const ProgramMobile = () => {
                 See More
               </ButtonPrimary>
             </div>
-          </div>
-            {clickFasility ? (
-              <div className="duration-300 ease-in-out flex flex-col items-center">
-                <FasilitasMobile />
-                <Toolmobile />
-              </div>
-            ) : null}
+          </div> */}
+          {/* {clickFasility ? (
+            <div className="duration-300 ease-in-out flex flex-col items-center"></div>
+          ) : null} */}
         </div>
       </div>
     </section>
