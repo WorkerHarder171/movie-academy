@@ -52,7 +52,7 @@ const ButtonPrimary = ({ className, children, ...props }: ButtonProps) => (
   <button
     type="button"
     className={cn(
-      "relative ml-2 inline-flex h-8 w-fit scale-125 items-center justify-center whitespace-nowrap rounded-full bg-[#606060] px-4 py-2 text-sm font-bold uppercase tracking-widest text-white/80 shadow-md ring-offset-background drop-shadow-[-1px_2px_0px_rgba(86, 147, 70, 1)] hover:bg-[#569346] hover:drop-shadow-[-1px_2px_0px_rgba(86, 147, 70, 1)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50",
+      "relative inline-flex h-8 w-fit scale-125 items-center justify-center whitespace-nowrap rounded-full bg-[#606060] px-4 py-2 text-sm font-bold uppercase tracking-widest text-white/80 shadow-md ring-offset-background drop-shadow-[-1px_2px_0px_rgba(86, 147, 70, 1)] hover:bg-[#569346] hover:drop-shadow-[-1px_2px_0px_rgba(86, 147, 70, 1)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50",
       className
     )}
     {...props}

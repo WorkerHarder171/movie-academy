@@ -69,7 +69,7 @@ export const ProgramMobile = () => {
             <p className="text-sm text-bodyTextLight tracking-widest leading-relaxed">
               Penyelenggaraan Program dibagi menjadi 3 tahap.
             </p>
-            <div className="wrapper">
+            <div className="wrapper mx-auto">
               <ButtonPrimary
                 className={`uppercase group ${click ? " hidden" : ""}`}
                 onClick={handleOnClick}

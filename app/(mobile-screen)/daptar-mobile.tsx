@@ -15,7 +15,7 @@ const Daptar = () => {
               Movie dan Animasi, dengan 80% praktik yang dipandu langsung oleh
               praktisi profesional.
             </p>
-            <ButtonPrimary className="uppercase group">See More</ButtonPrimary>
+            <ButtonPrimary className="uppercase group mx-auto">See More</ButtonPrimary>
           </div>
         </div>
       </div>

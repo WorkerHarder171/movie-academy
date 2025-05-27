@@ -38,7 +38,7 @@ export const HeroMobile = () => {
                       Pendidikan, kebudayaan, sosial, ilmu pengetahuan dan teknologi.
                     </p>
           <button
-            className={`${click ? "hidden" : null}`}
+            className={`mx-auto ${click ? "hidden" : null}`}
             onClick={handleOnClick}
           >
             <ButtonPrimary className="uppercase group">See More</ButtonPrimary>
