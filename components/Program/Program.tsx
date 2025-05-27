@@ -196,8 +196,8 @@ export const ProgramBgMobile = () => {
           </p>
         </div>
       </div>
-      <div className="min-h-screen">
-        <div className="container mx-auto my-10">
+      <div className="min-h-screen bg-[#F1f1f1]">
+        <div className="container mx-auto py-10">
           <div className="wrapper flex flex-col gap-10 items-center justify-center">
             <p className="text-lg font-semibold capitalize text-center">
               mencetak tenaga kerja handal dan wirausaha berkarakter!

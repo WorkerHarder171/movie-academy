@@ -58,7 +58,7 @@ export const MobileHeader = () => {
             <Image
               src={Mylogo}
               alt="Logo Brand "
-              className="absolute -bottom-11 right-3 z-20 w-[100px] 400:w-[120px] 450:w-[140px] 640:w-[160px] md:-bottom-10"
+              className="absolute -bottom-10 right-3 z-20 w-[100px] 400:w-[120px] 450:w-[140px] 640:w-[160px] md:-bottom-10"
             />
           </div>
           <DividerMobileHeader />

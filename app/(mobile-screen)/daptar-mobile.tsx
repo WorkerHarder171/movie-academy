@@ -8,7 +8,7 @@ const Daptar = () => {
       <div className="bg-[#f1f1f1]">
         <div className="container mx-auto py-10  px-4">
           <div className="flex flex-col gap-6">
-            <Image className="w-10/12" src={Jadwal} alt="Jadwal Pendaptaran" />
+            <Image className="w-[240px] 400:w-[290px]" src={Jadwal} alt="Jadwal Pendaptaran" />
             <p className="text-sm text-bodyTextLight tracking-wider leading-relaxed mb-5">
               {" "}
               Dapatkan keterampilan praktis untuk membangun karir di industri

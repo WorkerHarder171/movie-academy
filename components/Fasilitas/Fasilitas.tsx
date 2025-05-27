@@ -55,7 +55,7 @@ export const FasilitasMobile = () => {
           <Image
             src={FasilitasTitle}
             alt="Program Academy"
-            // className="w-1/2"
+            className="w-10/12"
           />
 
           <p className="text-sm text-bodyTextDark tracking-wider leading-relaxed">

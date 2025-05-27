@@ -53,9 +53,9 @@ export const ProgramMobile = () => {
 
   return (
     <section id="program" className="w-full bg-[#F1f1f1]">
-      <div className="container mx-auto py-14">
+      <div className="container mx-auto">
         <div className="flex flex-col items-center justify-between">
-          <div className="flex flex-col basis-[55%] gap-6 mb-10 px-4">
+          <div className="flex flex-col basis-[55%] gap-6 py-10 px-4">
             <Image className="w-6/12" src={ProgramText} alt="Program" />
             <p className="text-bodyTextLight text-sm tracking-widest leading-relaxed">
               Lulusan Program Pelatihan &quot;Minilemon Movie Academy&quot;
@@ -86,7 +86,7 @@ export const ProgramMobile = () => {
                 exit={{ height: 0, opacity: 0 }}
                 transition={{ duration: 0.5, ease: "easeInOut" }}
               >
-                <div className="flex flex-col items-center">
+                <div className="flex flex-col items-center bg-[#292929] ">
                   <ProgramBgMobile />
                   <div className="bg-[#292929] w-full text-center pb-5">
                     <ButtonPrimary

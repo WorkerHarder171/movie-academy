@@ -49,7 +49,7 @@ export const GaleriMobile = () => {
           objectFit="fill"
           alt="Hero image"
         />
-        <div className="container mx-auto z-20 flex flex-col gap-6 pb-5 pt-10">
+        <div className="container mx-auto z-20 flex flex-col gap-6">
           <Image
             src={GaleriTitle}
             alt="Program Academy"

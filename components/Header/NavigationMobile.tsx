@@ -16,14 +16,8 @@ const NavigationMobile = () => {
   const { setCurrentLink } = useUpdateCurrentLink();
 
   const NAV_LINKS = useMemo(
-    () => [
-      "#about",
-      "#program",
-      "#facility",
-      "#gallery",
-"#contact"
-    ],
-    [],
+    () => ["#about", "#program", "#facility", "#gallery", "#contact"],
+    []
   );
 
   const scrollToPosition = useCallback((element: HTMLElement | null) => {
@@ -63,12 +57,12 @@ const NavigationMobile = () => {
       scrollToPosition,
       NAV_LINKS,
       setCurrentLink,
-    ],
+    ]
   );
 
   useEffect(() => {
     const currentHashIndex = NAV_LINKS.findIndex(
-      (link) => link === window.location.hash,
+      (link) => link === window.location.hash
     );
     if (currentHashIndex !== -1 && currentHashIndex !== currentLinkIndex) {
       setCurrentLinkIndex(currentHashIndex);
@@ -91,14 +85,14 @@ const NavigationMobile = () => {
         scrollPercent >= 1 ? null : "translate-y-12",
         "fixed inset-x-0 z-50 mx-auto flex w-fit items-center justify-center transition-all duration-300 ease-out lg:hidden",
         isHeaderActive && "fade-slide-out bottom-0",
-        isFooterActive && "fade-slide-in bottom-2 md:bottom-5",
+        isFooterActive && "fade-slide-in bottom-2 md:bottom-5"
       )}
     >
       <div
         className={cn(
           "flex w-fit flex-row items-center justify-center gap-x-6 rounded-t-3xl px-8 py-2.5 transition-all duration-300 ease-out",
           isHeaderActive && "bg-[#B3B3B3] fade-in",
-          isFooterActive && "bg-transparent fade-out",
+          isFooterActive && "bg-transparent fade-out"
         )}
       >
         {scrollPercent >= 100 ? (
@@ -112,7 +106,7 @@ const NavigationMobile = () => {
               aria-label="Previous section"
               className={cn(
                 "h-4 w-4 scale-x-[-1] cursor-pointer text-black",
-                currentLinkIndex === 0 && "cursor-not-allowed opacity-50",
+                currentLinkIndex === 0 && "cursor-not-allowed opacity-50"
               )}
             />
             <div className="font-bold capitalize tracking-wider text-black">
@@ -124,7 +118,7 @@ const NavigationMobile = () => {
               className={cn(
                 "h-4 w-4 cursor-pointer text-black",
                 currentLinkIndex === NAV_LINKS.length - 1 &&
-                  "cursor-not-allowed opacity-50",
+                  "cursor-not-allowed opacity-50"
               )}
             />
           </>

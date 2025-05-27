@@ -38,11 +38,11 @@ const ContactMobile = () => {
             {" "}
             <div className="flex basis-1/2 flex-col items-center justify-center gap-4">
               <div className="">
-                <Image className="w-7/12 text-center mx-auto" src={ContactUsTitle} alt="Contact Us"/>
+                <Image className="w-[210px] 400:w-[230px]" src={ContactUsTitle} alt="Contact Us"/>
               </div>
               <p className="text-xl text-[#d2def4]">How can we help you?</p>
             </div>
-            <form className="basis-1/2 py-5">
+            <form className="flex w-full basis-1/2 flex-col pl-4 pr-[1rem] lg:pr-14">
               <div className="flex flex-col gap-2 text-sm">
                 <div className="">
                   <label htmlFor="name" className="hidden">
