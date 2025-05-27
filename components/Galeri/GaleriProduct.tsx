@@ -704,7 +704,6 @@ export function GalleryProductMobile() {
                   </motion.div>
                 )}
               </AnimatePresence>
-            </div>
             <Link
               href={"#"}
               className="flex flex-row items-center gap-x-2 text-bodyTextDark"
@@ -714,6 +713,7 @@ export function GalleryProductMobile() {
               </span>
               Trailer
             </Link>
+            </div>
           </motion.div>
         </motion.div>
       </motion.div>
