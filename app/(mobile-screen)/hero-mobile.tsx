@@ -2,6 +2,7 @@
 import Image from "next/image";
 import TitleHero from "@/public/title/Minilemon-Movie-Academy.png";
 import bgMovie from "@/public/background/About-us.png";
+// import bgHero from "@/public/background/Home.png";
 
 import { useState } from "react";
 import { ButtonPrimary } from "@/components/ui/button";
@@ -21,9 +22,9 @@ export const HeroMobile = () => {
       <div className="relative flex py-4 items-center justify-center bg-[#d6ddf4] bg-cover bg-center">
    <Image src={bgMovie} quality={100} fill sizes="(100vw)" className="absolute z-10" objectFit="cover" alt="Hero image" />
         <div className="container mx-auto z-20 flex flex-col items-center justify-center gap-6 px-6 pb-5 pt-10">
-          <p className="text-xl text-boldTextDark uppercase font-bold mb-2">
+          {/* <p className="text-xl text-boldTextDark uppercase font-bold mb-2">
             Welcome To
-          </p>
+          </p> */}
           <Image
             src={TitleHero}
             alt="Minilemon Movie Academy"
