@@ -97,7 +97,7 @@ export const FounderMobile = () => {
                 <div
                   key={index}
                   className={`flex flex-col gap-4 justify-center items-center ${
-                    item.nama === "Anis Ilahi Wahdati" ? "col-start-2" : ""
+                    item.nama === "Anis Ilahi Wahdati" ? "col-span-2 mx-auto" : ""
                   }`}
                 >
                   <div className="h-[200px] bg-[#D5D5D5]">

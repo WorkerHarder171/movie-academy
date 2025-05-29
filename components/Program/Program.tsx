@@ -244,7 +244,7 @@ export const ProgramBgMobile = () => {
             </div>
           </div>
         </div>
-        <div className="wrapper py-10 px-4 bg-[#292929]">
+        <div className="wrapper py-10 px-4 border-none bg-[#292929]">
           <div className="container mx-auto">
             <Image
               src={PendidikanTitle}

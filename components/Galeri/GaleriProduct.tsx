@@ -334,8 +334,8 @@ export function GalleryProductMobile() {
                 src={PetualangaImage}
                 alt="Petualangan minilemon"
                 layout="fill"
-                objectFit="contain"
-                className="w-full"
+                objectFit="fill"
+                className=""
               />
             </div>
             <div className="flex flex-col gap-y-6 text-start text-sm leading-[1.6rem] tracking-wider text-[#c0cbdf]/90 sm:leading-7">
@@ -422,7 +422,7 @@ export function GalleryProductMobile() {
                 src={SaveTheEarth}
                 alt="Minilemon Save The Earth"
                 layout="fill"
-                objectFit="contain"
+                objectFit="fill"
                 className="w-full"
               />
             </div>
@@ -529,7 +529,7 @@ export function GalleryProductMobile() {
                 className="w-full"
                 src={MinilemonExplore}
                 layout="fill"
-                objectFit="contain"
+                objectFit="fill"
                 alt="Minilemon Explore"
               />
             </div>
@@ -631,7 +631,7 @@ export function GalleryProductMobile() {
                 className="w-full"
                 src={Parenting}
                 layout="fill"
-                objectFit="contain"
+                objectFit="fill"
                 alt="Minilemon Live Parenting"
               />
             </div>
@@ -735,7 +735,7 @@ export function GalleryProductMobile() {
                 className="w-full"
                 src={KabaretShow}
                 layout="fill"
-                objectFit="contain"
+                objectFit="fill"
                 alt="Petualangan minilemon"
               />
             </div>
